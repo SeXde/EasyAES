@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 public class EasyAES
 {
-    public static (string, byte[]?) Encrypt(string plainText, string password)
+    public static (string, byte[]) Encrypt(string plainText, string password)
     {
 
         if (string.IsNullOrEmpty(plainText))
