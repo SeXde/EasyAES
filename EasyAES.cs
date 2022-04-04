@@ -9,7 +9,7 @@ public class EasyAES
 
         if (string.IsNullOrEmpty(plainText))
         {
-            return (string.Empty, null);
+            throw new ArgumentNullException("Text is null or empty");
         }
 
         if (string.IsNullOrEmpty(password))
@@ -47,7 +47,7 @@ public class EasyAES
 
         if (string.IsNullOrEmpty(cipherText))
         {
-            return string.Empty;
+            throw new ArgumentNullException("Text is null or empty");
         }
 
         if (string.IsNullOrEmpty(password))
